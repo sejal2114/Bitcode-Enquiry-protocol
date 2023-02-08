@@ -33,8 +33,9 @@ class StudentListViewController: UIViewController ,StudentProtocol {
     
     @IBAction func addButton(_ sender: Any) {
         let formViewController = (self.storyboard?.instantiateViewController(withIdentifier: "FormViewController") as? FormViewController)!
-        formViewController.studentInfo = self
-
+        
+        formViewController.studentInfo = self    //assign  reference of protocol to self
+        
             
         navigationController?.pushViewController(formViewController, animated: true)
     }

@@ -14,13 +14,13 @@ class HomeViewController: UIViewController {
     }
 
     @IBAction func navigateToAndroid(_ sender: Any) {
-      var navigate = (self.storyboard?.instantiateViewController(withIdentifier: "CourseViewController") as? CourseViewController)!
+        let navigate = (self.storyboard?.instantiateViewController(withIdentifier: "CourseViewController") as? CourseViewController)!
         navigate.courseName = "Android"
         navigationController?.pushViewController(navigate, animated: true)
     }
     
     @IBAction func navigateToIos(_ sender: Any) {
-        var courseViewController = (self.storyboard?.instantiateViewController(withIdentifier: "CourseViewController") as? CourseViewController)!
+        let courseViewController = (self.storyboard?.instantiateViewController(withIdentifier: "CourseViewController") as? CourseViewController)!
         courseViewController.courseName = "iOS"
         navigationController?.pushViewController(courseViewController, animated: true)
         

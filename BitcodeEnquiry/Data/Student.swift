@@ -12,3 +12,13 @@ struct Student {
     var lastName : String = ""
     var phoneNumber : Int 
 }
+
+
+
+/*
+ {
+   "firstName": "fdgfdgd",
+   "lastName": "dfgdgfd",
+   "phoneNumber": 454354354,
+ }
+ */
